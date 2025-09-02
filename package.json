@@ -1,0 +1,27 @@
+{
+  "name": "time-locked-vault",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat ignition deploy ignition/modules/DeployVault.ts",
+    "deploy:hardhat": "hardhat ignition deploy ignition/modules/DeployVault.ts --network hardhat",
+    "node": "hardhat node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.13",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@types/chai": "^4.3.0",
+    "chai": "^4.3.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
